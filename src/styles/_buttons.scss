@@ -1,18 +1,18 @@
 .btn {
-  --_btn-clr: theme("colors.neutral.50");
-  --_btn-bg-clr: theme("colors.blue.500");
-  --_btn-border-clr: theme("colors.blue.500");
+  --_btn-clr: theme("colors.neutral.950");
+  --_btn-bg-clr: theme("colors.saOrange.200");
+  --_btn-border-clr: theme("colors.saOrange.200");
   --_btn-border: thin solid var(--_btn-border-clr);
   --_btn-td: none;
 
-  --_btn-hover-clr: theme("colors.neutral.50");
-  --_btn-hover-bg-clr: theme("colors.neutral.500");
-  --_btn-hover-border-clr: theme("colors.neutral.500");
+  --_btn-hover-clr: theme("colors.neutral.950");
+  --_btn-hover-bg-clr: theme("colors.saOrange.300");
+  --_btn-hover-border-clr: theme("colors.saOrange.300");
   --_btn-hover-border: thin solid var(--_btn-hover-border-clr);
   --_btn-hover-td: none;
 
-  --_btn-spacer-block: theme("padding.3");
-  --_btn-spacer-inline: theme("padding.4");
+  --_btn-spacer-block: theme("padding.2");
+  --_btn-spacer-inline: theme("padding.3");
   --_btn-spacer-gap: theme("padding.2");
   --_btn-img-size: 1.5em;
 

@@ -13,7 +13,7 @@ body {
   font-family: theme("fontFamily.sans");
   font-size: theme("fontSize.base");
   color: theme("colors.gray.900");
-  background-color: theme("colors.gray.50");
+  background-color: theme("colors.saYellow.200");
   position: relative;
 
   &.theme-dark,
@@ -95,9 +95,12 @@ ol.list {
   list-style-type: decimal;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    color: theme("colors.gray.50");
-    background-color: theme("colors.gray.900");
-  }
+.text-grid {
+  --_text-width: 20ch;
+  --_spacer: var(--v-400);
+
+  display: grid;
+  grid-template-columns: var(--_text-width) auto;
+  align-items: end;
+  gap: var(--_spacer);
 }
