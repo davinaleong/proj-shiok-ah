@@ -1,47 +1,39 @@
-# Astro Starter Kit: Minimal
+# Shiok Ah! - Food Blog with a Bite!
 
-```sh
-npm create astro@latest -- --template minimal
-```
+**Welcome to Shiok Ah!, Davina's haven for all things delicious!** This repository holds the code for my culinary adventures, powered by a delightful mix of modern tech:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+**Tech Stack:**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- Astro: Blazing-fast server-side rendering framework for lightning-quick page loads.
+- TailwindCSS: Utility-first CSS framework for rapid-fire styling with minimal config.
+- SASS: Extendable preprocessor for DRY and organized CSS styles.
+- TypeScript: Static typing for enhanced code maintainability and fewer runtime errors.
+- DayJS: Lightweight and easy-to-use library for date and time manipulations.
 
-## 🚀 Project Structure
+**Getting Started:**
 
-Inside of your Astro project, you'll see the following folders and files:
+1. Clone the repository: `git clone https://github.com/davina/shiok-ah`
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+**Folder Structure:**
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- `assets`: Holds static files like images and fonts.
+- `components`: Reusable components for blog elements like recipes, posts, and layouts.
+- `styles`: Houses the SASS files for global and component styles.
+- `pages`: Individual pages for the blog, including the homepage, recipe pages, and about page.
+- `tsconfig.json`: Configures TypeScript compiler options.
+- `astro.config.js`: Astro configuration file for routing and other settings.
+- `package.json`: Manages dependencies and scripts.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+**Contributing:**
 
-Any static assets, like images, can be placed in the `public/` directory.
+Feel free to fork and send pull requests! We welcome contributions for bug fixes, new features, and additional recipes (yum!).
 
-## 🧞 Commands
+**License:**
 
-All commands are run from the root of the project, from a terminal:
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+**Enjoy and Happy Shioking!**
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+**Davina**
