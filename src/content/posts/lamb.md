@@ -7,10 +7,10 @@ rating: 3
 location: ["Raffles Boulevard", "Singapore"]
 images:
   [
-    { src: "apple-pie-0001.jpg", alt: "Apple Strudel 1" },
-    { src: "apple-pie-0002.jpg", alt: "Apple Strudel 2" },
-    { src: "apple-pie-0003.jpg", alt: "Apple Strudel 3" },
-    { src: "apple-pie-0004.jpg", alt: "Apple Strudel 4" },
+    { src: "lamb-0001.jpg", alt: "Lamb 1" },
+    { src: "lamb-0002.jpg", alt: "Lamb 2" },
+    { src: "lamb-0003.jpg", alt: "Lamb 3" },
+    { src: "lamb-0004.jpg", alt: "Lamb 4" },
   ]
 ---
 
