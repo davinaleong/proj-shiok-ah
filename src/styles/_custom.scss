@@ -1,7 +1,7 @@
 // General Custom Styles
 :root {
   --content-width: theme("screens.xl");
-  --flow-spacer: theme("gap.4");
+  --flow-spacer: theme("spacing.2");
 }
 
 :focus {
@@ -24,10 +24,10 @@ body {
 }
 
 a {
-  --_a-clr: theme("colors.blue.500");
+  --_a-clr: theme("colors.saGreen.500");
   --_a-td: none;
 
-  --_a-hover-clr: theme("colors.blue.500");
+  --_a-hover-clr: theme("colors.saGreen.500");
   --_a-hover-td: underline;
 
   color: var(--_a-clr);
@@ -103,4 +103,13 @@ ol.list {
   grid-template-columns: var(--_text-width) auto;
   align-items: end;
   gap: var(--_spacer);
+}
+
+.container-q {
+  container-name: container-q;
+  container-type: inline-size;
+
+  &-primary-main {
+    container-name: container-q-primary-main;
+  }
 }
