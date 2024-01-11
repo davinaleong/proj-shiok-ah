@@ -1,0 +1,17 @@
+/// Primary Header
+
+.primary-header {
+  color: theme("colors.saGreen.500");
+  background-color: theme("colors.saOrange.200");
+
+  &__icon {
+    font-size: theme("fontSize.5xl");
+    rotate: -30deg;
+    transform-origin: center;
+  }
+
+  &__heading {
+    font-size: theme("fontSize.5xl");
+    font-weight: theme("fontWeight.semibold");
+  }
+}
