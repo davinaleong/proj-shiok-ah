@@ -1,0 +1,11 @@
+/// Primary Footer
+
+.primary-footer {
+  background-color: theme("colors.saOrange.200");
+
+  &__content {
+    text-align: center;
+    font-size: theme("fontSize.sm");
+    font-style: italic;
+  }
+}
