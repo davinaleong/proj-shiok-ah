@@ -8,6 +8,7 @@
 
 .card {
   --_card-clr: theme("colors.gray.900");
+  --_card-rating-clr: theme("colors.gray.900");
 
   --_card-bg-clr: theme("colors.saOrange.200");
   --_card-hover-bg-clr: theme("colors.saOrange.300");
@@ -43,12 +44,21 @@
   &__rating {
     display: flex;
     gap: theme("spacing.1");
+    color: var(--_card-rating-clr);
   }
 
   &__content {
     display: grid;
     grid-template-columns: min-content auto;
     gap: theme("spacing.3");
+  }
+
+  &-top-rated {
+    --_card-clr: theme("colors.gray.50");
+    --_card-rating-clr: theme("colors.saOrange.200");
+
+    --_card-bg-clr: theme("colors.saGreen.500");
+    --_card-hover-bg-clr: theme("colors.saGreen.600");
   }
 }
 
