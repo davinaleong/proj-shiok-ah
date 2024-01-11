@@ -1,16 +1,96 @@
 ---
+import dayjs from "dayjs"
+import favicon from "../assets/images/logo-png-1024x1024.png"
 
+const { APP_NAME, DESCRIPTION, KEYWORDS, AUTHOR, RELEASED_AT } = import.meta.env
+
+const { title, heading = APP_NAME, description = DESCRIPTION, keywords = KEYWORDS } = Astro.props
+const theTitle = title ? `${APP_NAME} - ${title}` : APP_NAME
+
+const releasedYear = Number(dayjs(RELEASED_AT).format("YYYY"))
+const thisYear: number = new Date().getFullYear()
+
+const copyrightYear = thisYear === releasedYear ? releasedYear : `${releasedYear} - ${thisYear}`
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta name="description" content={description}>
+		<meta name="keywords" content={keywords}>
+		<meta name="author" content={AUTHOR}>
+
+		<title>{theTitle}</title>
+
+		<link rel="icon" type="image/svg+xml" href={favicon.src} />
+		<script
+			is:inline
+			src="https://kit.fontawesome.com/1b82ea5cb2.js"
+			crossorigin="anonymous"
+			></script>
+
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header class="primary-header">
+			<div class="wrapper | flow mx-auto p-4">
+				<div class="primary-header__icon text-saGreen-500">
+					<i class="fa-duotone fa-pan-food"></i>
+				</div>
+				<h1 class="text-6xl font-bold">{heading}</h1>
+			</div>
+		</header>
+
+		<main class="primary-main">
+			<div class="wrapper container-q container-q-primary-main | flow mx-auto p-4">
+				<div class="card-grid">
+					<a href="#" class="card">
+						<div class="card__images">
+							<img src="../assets/images/apple-pie-0001.jpg" alt="Apple Pie 1" srcset="">
+							<img src="../assets/images/apple-pie-0002.jpg" alt="Apple Pie 2" srcset="">
+							<img src="../assets/images/apple-pie-0003.jpg" alt="Apple Pie 3" srcset="">
+							<img src="../assets/images/apple-pie-0004.jpg" alt="Apple Pie 4" srcset="">
+						</div><!-- ./card__images -->
+
+						<div class="card__body | flow">
+							<h2 class="text-2xl font-bold">Post Title</h2>
+
+							<div class="card__rating">
+								<i class="fa-solid fa-sharp fa-star"></i>
+								<i class="fa-solid fa-sharp fa-star"></i>
+								<i class="fa-solid fa-sharp fa-star"></i>
+								<i class="fa-solid fa-sharp fa-star"></i>
+								<i class="fa-solid fa-sharp fa-star"></i>
+							</div><!-- card__rating -->
+
+							<div class="card__content">
+								<div class="card__content__icon">
+									<i class="fa-duotone fa-earth-asia"></i>
+								</div><!-- ./card__content__icon -->
+								<div class="card__content__content">
+									{["Pasta Fresca", "Bukit Timah", "Singapore"].join(", ")}
+								</div>
+							</div><!-- ./card__content__content -->
+
+							<div class="card__content">
+								<div class="card__content__icon">
+									<i class="fa-duotone fa-calendar"></i>
+								</div><!-- ./card__content__icon -->
+								<div class="card__content__content">
+									11 Jan 2024
+								</div>
+							</div><!-- ./card__content__content -->
+						</div><!-- ./card__body -->
+					</a>
+				</div>
+			</div>
+		</main>
+
+		<footer class="primary-footer">
+			<div class="wrapper | flow mx-auto p-4">
+				<p class="primary-footer__content">{APP_NAME} &copy; {AUTHOR}, {copyrightYear}</p>
+			</div>
+		</footer>
 	</body>
 </html>
