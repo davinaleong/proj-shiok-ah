@@ -82,6 +82,23 @@
     }
   }
 
+  &-fixed {
+    --_btn-fixed-spacing: theme("spacing.4");
+
+    position: fixed;
+    z-index: 1;
+
+    &-top-left {
+      top: var(--_btn-fixed-spacing);
+      left: var(--_btn-fixed-spacing);
+    }
+
+    &-bottom-right {
+      bottom: var(--_btn-fixed-spacing);
+      right: var(--_btn-fixed-spacing);
+    }
+  }
+
   &-theme {
     border-radius: theme("borderRadius.sm");
     box-shadow: theme("boxShadow.md");

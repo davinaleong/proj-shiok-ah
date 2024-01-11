@@ -1,0 +1,15 @@
+---
+import dayjs from "dayjs"
+
+const { APP_NAME, AUTHOR, RELEASED_AT } = import.meta.env
+
+const releasedYear = Number(dayjs(RELEASED_AT).format("YYYY"))
+const thisYear: number = new Date().getFullYear()
+
+const copyrightYear = thisYear === releasedYear ? releasedYear : `${releasedYear} - ${thisYear}`
+---
+<footer class="primary-footer">
+    <div class="wrapper | flow mx-auto p-4">
+        <p class="primary-footer__content">{APP_NAME} &copy; {AUTHOR}, {copyrightYear}</p>
+    </div>
+</footer>
