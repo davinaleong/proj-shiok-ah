@@ -1,9 +1,9 @@
 ---
 title: "Wagyu Steak: A Symphony of Indulgence"
 date: "2024-01-11 16:06:00"
-description: ""
-keywords: ""
-rating: 5
+description: "Indulge in the ultimate steak experience with wagyu. Discover its marbled magic, exquisite flavors, and tips for cooking it to perfection. A symphony of indulgence for meat lovers!"
+keywords: "wagyu steak, luxury food, fine dining, beef, steak recipe, grilling tips, marbling, tender meat, gourmet food, special occasion, cooking techniques, meat lover"
+rating: 4
 location: ["Wooloomooloo", "Swissotel", "Singapore"]
 images:
   [

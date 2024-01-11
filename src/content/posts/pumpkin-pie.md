@@ -1,9 +1,9 @@
 ---
 title: "Pumpkin Pie: A Warm Embrace of Autumn's Bounty"
 date: "2024-01-11 16:01:00"
-description: ""
-keywords: ""
-rating: 5
+description: "Embrace the warmth of autumn with this classic pumpkin pie recipe. Discover its origins, variations, and tips for achieving a perfectly smooth custard and flaky crust. A taste of home and coziness!"
+keywords: "pumpkin pie, autumn, Thanksgiving, dessert, comfort food, baking, pumpkin recipes, homemade, custard, flaky crust, family recipe, traditional food, fall flavors"
+rating: 2
 location: ["Redmond", "USA"]
 images:
   [

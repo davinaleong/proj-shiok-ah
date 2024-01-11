@@ -1,8 +1,8 @@
 ---
 title: "Apple Pie: A Slice of Sweet Simplicity"
 date: "2024-01-11 15:48:00"
-description: ""
-keywords: ""
+description: "Get your pie on with this ode to apple pie! Discover its history, endless variations, and tips for baking the perfect slice. Sweet and heartwarming, just like grandma used to make!"
+keywords: "apple pie, dessert, baking, comfort food, autumn, cinnamon, apples, recipe, easy baking, sweet treats, traditional food"
 rating: 5
 location: ["Bukit Timah", "Singapore"]
 images:

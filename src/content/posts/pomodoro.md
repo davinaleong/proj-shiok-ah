@@ -1,8 +1,8 @@
 ---
 title: "Pomodoro Spaghetti: A Love Letter from Italy's Kitchen"
 date: "2024-01-11 16:03:00"
-description: ""
-keywords: ""
+description: "Travel to Italy's heart with this simple yet satisfying pomodoro spaghetti. Learn the secrets of achieving the perfect balance of fresh tomatoes, fragrant basil, and al dente pasta. A quick and delicious weeknight meal!"
+keywords: "pasta, Italian food, tomato sauce, easy recipes, weeknight meals, comfort food, spaghetti, garlic, basil, cooking tips, vegetarian, fresh ingredients, authentic Italian"
 rating: 5
 location: ["Pasta Fresca", "Bukit Timah", "Singapore"]
 images:

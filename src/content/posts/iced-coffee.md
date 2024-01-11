@@ -1,9 +1,9 @@
 ---
 title: "Iced Coffee: A Cool Embrace of Caffeine and Bliss"
 date: "2024-01-11 16:06:00"
-description: ""
-keywords: ""
-rating: 5
+description: "Beat the heat and boost your day with this ode to iced coffee. Explore its refreshing flavors, endless variations, and tips for crafting the perfect cup. Your cool caffeine escape awaits!"
+keywords: "iced coffee, coffee, caffeine, summer drinks, refreshing beverages, recipes, cold brew, hot coffee, latte, espresso, homemade, flavored coffee, creamer, summer essential"
+rating: 2
 location: ["Wooloomooloo", "Swissotel", "Singapore"]
 images:
   [
