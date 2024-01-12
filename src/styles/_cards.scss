@@ -22,6 +22,7 @@
   padding-inline-end: var(--_card-spacing);
   border-radius: theme("spacing.2");
   box-shadow: theme("boxShadow.md");
+  cursor: pointer;
 
   &:hover {
     background-color: var(--_card-hover-bg-clr);
