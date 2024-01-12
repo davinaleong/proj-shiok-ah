@@ -14,7 +14,7 @@ const thisImages: any[] = images.slice(0, Number(CARD_IMAGE_COUNT))
 ---
 <a href={url} class={className}>
     <div class="card__images">
-        {thisImages.map(({ src, alt }: any) => <img src={`/src/assets/images/${src}`} alt={alt} />)}
+        {thisImages.map(({ src, alt }: any) => <img src={`/images/${src}`} alt={alt} />)}
     </div><!-- ./card__images -->
 
     <div class="card__body | flow mt-4">

@@ -14,7 +14,7 @@ const className: string = Number(rating) === Number(MAX_RATING) ? "top-rated" : 
     <main class="primary-main">
         <div class="wrapper container-q container-q-primary-main | flow mx-auto p-4">
             <div class="gallery">
-                {images.map(({ src, alt }: any) => <img src={`/src/assets/images/${src}`} alt={alt}>)}
+                {images.map(({ src, alt }: any) => <img src={`/images/${src}`} alt={alt}>)}
             </div>
 
             <div class="content | flow">
