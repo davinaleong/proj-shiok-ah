@@ -15,8 +15,6 @@ images:
   ]
 ---
 
-## Apple Pie: A Slice of Sweet Simplicity
-
 Ah, apple pie. The warm aroma of cinnamon-laced apples wafts through the kitchen, conjuring images of cozy autumn days and family gatherings. It's a dessert that transcends trends, a timeless classic that holds a special place in our hearts (and stomachs!).
 
 **A History of Humble Beginnings:**
