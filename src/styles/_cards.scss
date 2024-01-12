@@ -1,9 +1,14 @@
 /// Cards
 
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: theme("spacing.4");
+
+  .card {
+    width: min(100%, 400px);
+  }
 }
 
 .card {
