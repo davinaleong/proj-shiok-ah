@@ -1,0 +1,42 @@
+---
+import dayjs from "dayjs"
+import Star from "../components/star.astro"
+
+const { DATE_FORMAT } = import.meta.env
+const { title, rating, location, date } = Astro.props
+---
+<header class="primary-header primary-header-post">
+    <div class="wrapper | mx-auto p-4 text-center">
+        <h1 class="primary-header__heading">{title}</h1>
+
+        <div class="primary-header__rating">
+            {() => {
+                const stars: any[] = []
+                for (let i = 0; i < rating; ++i) {
+                    stars.push(<Star />)
+                }
+                return stars
+            }}
+        </div>
+
+        <div class="primary-header__meta | mt-2">
+            <div class="primary-header__meta__content">
+                <div class="primary-header__meta__content__icon">
+                    <i class="fa-duotone fa-earth-asia"></i>
+                </div>
+                <div class="primary-header__meta__content__text">
+                    {location.join(", ")}
+                </div>
+            </div>
+
+            <div class="primary-header__meta__content">
+                <div class="primary-header__meta__content__icon">
+                    <i class="fa-duotone fa-calendar"></i>
+                </div>
+                <div class="primary-header__meta__content__text">
+                    {dayjs(date).format(DATE_FORMAT)}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

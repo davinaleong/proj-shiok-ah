@@ -1,41 +1,9 @@
 ---
 import Main from "../layouts/main.astro"
-import IndexHeader from "../components/index-header.astro"
+import PostHeader from "../components/post-header.astro"
 ---
 <Main>
-    <header class="primary-header primary-header-post">
-        <div class="wrapper | mx-auto p-4 text-center">
-            <h1 class="primary-header__heading">Post Title</h1>
-
-            <div class="primary-header__rating">
-                <i class="fa-sharp fa-star"></i>
-                <i class="fa-sharp fa-star"></i>
-                <i class="fa-sharp fa-star"></i>
-                <i class="fa-sharp fa-star"></i>
-                <i class="fa-sharp fa-star"></i>
-            </div>
-
-            <div class="primary-header__meta | mt-2">
-                <div class="primary-header__meta__content">
-                    <div class="primary-header__meta__content__icon">
-                        <i class="fa-duotone fa-earth-asia"></i>
-                    </div>
-                    <div class="primary-header__meta__content__text">
-                        Singapore
-                    </div>
-                </div>
-
-                <div class="primary-header__meta__content">
-                    <div class="primary-header__meta__content__icon">
-                        <i class="fa-duotone fa-calendar"></i>
-                    </div>
-                    <div class="primary-header__meta__content__text">
-                        11 Jan 2024
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <PostHeader title="Lorem Ipsum" rating="3" location={["Bukit Timah", "Singapore"]} date="2024-01-11" />
 
     <main class="primary-main">
         <div class="wrapper container-q container-q-primary-main | flow mx-auto p-4">
