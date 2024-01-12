@@ -1,4 +1,5 @@
 ---
+layout: "./../../layouts/post.astro"
 title: "Pomodoro Spaghetti: A Love Letter from Italy's Kitchen"
 date: "2024-01-11 16:03:00"
 description: "Travel to Italy's heart with this simple yet satisfying pomodoro spaghetti. Learn the secrets of achieving the perfect balance of fresh tomatoes, fragrant basil, and al dente pasta. A quick and delicious weeknight meal!"

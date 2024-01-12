@@ -1,4 +1,5 @@
 ---
+layout: "./../../layouts/post.astro"
 title: "Wagyu Steak: A Symphony of Indulgence"
 date: "2024-01-11 16:06:00"
 description: "Indulge in the ultimate steak experience with wagyu. Discover its marbled magic, exquisite flavors, and tips for cooking it to perfection. A symphony of indulgence for meat lovers!"

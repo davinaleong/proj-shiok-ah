@@ -1,4 +1,5 @@
 ---
+layout: "./../../layouts/post.astro"
 title: "Pumpkin Pie: A Warm Embrace of Autumn's Bounty"
 date: "2024-01-11 16:01:00"
 description: "Embrace the warmth of autumn with this classic pumpkin pie recipe. Discover its origins, variations, and tips for achieving a perfectly smooth custard and flaky crust. A taste of home and coziness!"

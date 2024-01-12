@@ -1,73 +1,25 @@
 ---
 import Main from "../layouts/main.astro"
 import PostHeader from "../components/post-header.astro"
+
+const { MAX_RATING } = import.meta.env
+const { frontmatter } = Astro.props
+const { title, description, keywords, rating, location, date, images } = frontmatter
+
+const className: string = Number(rating) === Number(MAX_RATING) ? "top-rated" : ""
 ---
-<Main>
-    <PostHeader title="Lorem Ipsum" rating="3" location={["Bukit Timah", "Singapore"]} date="2024-01-11" />
+<Main title={title} description={description} keywords={keywords} className={className}>
+    <PostHeader title={title} rating={rating} location={location} date={date} />
 
     <main class="primary-main">
         <div class="wrapper container-q container-q-primary-main | flow mx-auto p-4">
             <div class="gallery">
-                <img src="/src/assets/images/apple-pie-0001.jpg" alt="Apple Pie 1">
-                <img src="/src/assets/images/apple-pie-0002.jpg" alt="Apple Pie 2">
-                <img src="/src/assets/images/apple-pie-0003.jpg" alt="Apple Pie 3">
-                <img src="/src/assets/images/apple-pie-0004.jpg" alt="Apple Pie 4">
-                <img src="/src/assets/images/apple-pie-0004.jpg" alt="Apple Pie 4">
+                {images.map(({ src, alt }: any) => <img src={`/src/assets/images/${src}`} alt={alt}>)}
             </div>
 
             <div class="content | flow">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <h5>Lorem ipsum dolor sit amet.</h5>
-                <h6>Lorem ipsum dolor sit amet.</h6>
-
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error soluta iure tempora distinctio impedit repellat earum natus facilis rem laudantium voluptas, repellendus quasi quis nemo sapiente laboriosam aliquid sunt saepe repudiandae amet deserunt. Quae excepturi neque asperiores magni porro aperiam eaque odio nesciunt similique rerum et, molestiae, iste accusantium ad.</p>
-
-                <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, natus cumque? Consectetur provident iure repellat deleniti nostrum magnam atque eum!</p>
-                </blockquote>
-
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                    <li>Corporis, amet sapiente omnis soluta voluptates sed!</li>
-                    <li>Commodi necessitatibus animi error autem eaque quasi.</li>
-                    <li>Maiores iste odit numquam facilis, sint id?</li>
-                    <li>Consectetur quas, itaque non quam perferendis reiciendis?</li>
-                </ul>
-
-                <ol>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                    <li>Corporis, amet sapiente omnis soluta voluptates sed!</li>
-                    <li>Commodi necessitatibus animi error autem eaque quasi.</li>
-                    <li>Maiores iste odit numquam facilis, sint id?</li>
-                    <li>Consectetur quas, itaque non quam perferendis reiciendis?</li>
-                </ol>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Make</th>
-                            <th>Model</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Honda</td>
-                            <td>Accord</td>
-                        </tr>
-                        <tr>
-                            <td>Toyota</td>
-                            <td>Camry</td>
-                        </tr>
-                        <tr>
-                            <td>Hyundai</td>
-                            <td>Elantra</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <slot />
+            </div><!-- ./content -->
         </div>
     </main>
 </Main>

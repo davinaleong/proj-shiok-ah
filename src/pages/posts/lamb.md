@@ -1,4 +1,5 @@
 ---
+layout: "./../../layouts/post.astro"
 title: "Herb-Crusted Rack of Lamb: A Symphony of Flavor"
 date: "2024-01-11 15:58:00"
 description: "Elevate your dinner party with this aromatic herb-crusted rack of lamb. Tender lamb meets a vibrant herbal crust for a symphony of flavors and textures. Impress your guests with this culinary masterpiece!"
