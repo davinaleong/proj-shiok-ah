@@ -1,14 +1,12 @@
 ---
 import "../styles/app.scss"
 
-import dayjs from "dayjs"
 import favicon from "../assets/images/logo-png-1024x1024.png"
-
 import PrimaryFooter from "../components/primary-footer.astro"
 
 const { APP_NAME, DESCRIPTION, KEYWORDS, AUTHOR, RELEASED_AT } = import.meta.env
 
-const { title, heading = APP_NAME, description = DESCRIPTION, keywords = KEYWORDS } = Astro.props
+const { title, heading = APP_NAME, description = DESCRIPTION, keywords = KEYWORDS, className } = Astro.props
 const theTitle = title ? `${APP_NAME} - ${title}` : APP_NAME
 
 const { pathname } = Astro.url
@@ -34,7 +32,7 @@ const home: boolean = pathname === "/"
 			></script>
 
 	</head>
-	<body id="top">
+	<body id="top" class={className}>
         {!home && <a href="/" class="btn btn-fixed btn-fixed-top-left">Back</a>}
 		<a href="#top" class="btn btn-fixed btn-fixed-bottom-right">Top</a>
 

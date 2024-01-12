@@ -4,6 +4,10 @@
   color: theme("colors.saGreen.500");
   background-color: theme("colors.saOrange.200");
 
+  &-post {
+    color: theme("colors.neutral.900");
+  }
+
   &__icon {
     font-size: theme("fontSize.5xl");
     rotate: -30deg;
@@ -13,5 +17,23 @@
   &__heading {
     font-size: theme("fontSize.5xl");
     font-weight: theme("fontWeight.semibold");
+  }
+
+  &__rating {
+    gap: theme("spacing.1");
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: theme("spacing.4");
+
+    &__content {
+      display: grid;
+      grid-template-columns: min-content auto;
+      gap: theme("spacing.2");
+    }
   }
 }
