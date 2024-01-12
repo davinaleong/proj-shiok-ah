@@ -1,9 +1,11 @@
 ---
+import dayjs from "dayjs"
 import Main from "../layouts/main.astro"
 import IndexHeader from "../components/index-header.astro"
 import Card from "../components/card.astro"
 
 const posts = await Astro.glob("./posts/*.md")
+posts.sort((a, b) => dayjs(b.frontmatter.date).unix() - dayjs(a.frontmatter.date).unix())
 ---
 <Main>
 	<IndexHeader />
