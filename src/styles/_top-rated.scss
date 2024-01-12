@@ -1,0 +1,40 @@
+/// Top Rated
+
+.top-rated {
+  color: theme("colors.neutral.50");
+  background-color: theme("colors.saTeal.500");
+
+  .primary-header {
+    color: theme("colors.neutral.50");
+    background-color: theme("colors.saGreen.500");
+
+    &__rating {
+      color: theme("colors.saOrange.200");
+    }
+  }
+
+  .content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: theme("colors.saYellow.200");
+    }
+
+    table,
+    .table {
+      --_table-clr: theme("colors.neutral.50");
+      --_table-clr-alt: theme("colors.neutral.50");
+      --_table-bg: theme("colors.saTeal.600");
+      --_table-bg-alt: theme("colors.saTeal.700");
+      --_table-border-clr: theme("colors.saGreen.700");
+    }
+  }
+
+  .primary-footer {
+    color: theme("colors.neutral.50");
+    background-color: theme("colors.saGreen.500");
+  }
+}
