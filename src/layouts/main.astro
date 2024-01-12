@@ -4,9 +4,9 @@ import "../styles/app.scss"
 import favicon from "../assets/images/logo-png-1024x1024.png"
 import PrimaryFooter from "../components/primary-footer.astro"
 
-const { APP_NAME, DESCRIPTION, KEYWORDS, AUTHOR, RELEASED_AT } = import.meta.env
+const { APP_NAME, DESCRIPTION, KEYWORDS, AUTHOR } = import.meta.env
 
-const { title, heading = APP_NAME, description = DESCRIPTION, keywords = KEYWORDS, className } = Astro.props
+const { title, description = DESCRIPTION, keywords = KEYWORDS, className } = Astro.props
 const theTitle = title ? `${APP_NAME} - ${title}` : APP_NAME
 
 const { pathname } = Astro.url
