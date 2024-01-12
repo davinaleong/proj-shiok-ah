@@ -2,7 +2,7 @@
 import dayjs from "dayjs"
 import Star from "../components/star.astro"
 
-const { DATE_FORMAT, MAX_RATING } = import.meta.env
+const { DATE_FORMAT, MAX_RATING, CARD_IMAGE_COUNT } = import.meta.env
 
 const { post }: any = Astro.props
 const { url, frontmatter } = post
@@ -10,10 +10,11 @@ const { url, frontmatter } = post
 const { title, date, rating, location, images }: any = frontmatter
 
 const className: string = rating === Number(MAX_RATING) ? `card card-top-rated` : `card`
+const thisImages: any[] = images.slice(0, Number(CARD_IMAGE_COUNT))
 ---
 <a href={url} class={className}>
     <div class="card__images">
-        {images.map(({ src, alt }: any) => <img src={`/src/assets/images/${src}`} alt={alt} />)}
+        {thisImages.map(({ src, alt }: any) => <img src={`/src/assets/images/${src}`} alt={alt} />)}
     </div><!-- ./card__images -->
 
     <div class="card__body | flow mt-4">
