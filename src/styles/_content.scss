@@ -39,4 +39,22 @@
   h6 {
     font-size: theme("fontSize.lg");
   }
+
+  ul,
+  ol {
+    padding-inline-start: theme("spacing.4");
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  blockquote {
+    background-color: theme("colors.saOrange.200");
+    padding: theme("padding.2");
+  }
 }
